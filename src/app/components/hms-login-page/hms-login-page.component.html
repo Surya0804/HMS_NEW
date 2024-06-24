@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management System - Login</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .container-fluid {
+      height: 100%;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .login-left {
+      background-image: url('assets/login-page-bg-img/19778.jpg');
+      /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      /* Text color on the left side */
+    }
+
+    .login-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      /* Blue background color */
+      height: 100vh;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .login-header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+      /* Blue color for header */
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group input {
+      height: 40px;
+      font-size: 0.9rem;
+      padding-left: 35px;
+      color: #000;
+      /* Black color for input text */
+    }
+
+    .input-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #000;
+      /* Black color for input icon */
+    }
+
+    .input-container {
+      position: relative;
+    }
+
+    .btn-custom {
+      background-color: #007bff;
+      /* Blue color for button */
+      color: #fff;
+      /* White color for button text */
+      padding: 10px 0;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      margin-bottom: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    .btn-custom:hover {
+      background-color: #0056b3;
+      /* Darker blue color on hover */
+      animation: none;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .custom-link {
+      color: #007bff;
+      /* Blue color for links */
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .custom-link:hover {
+      text-decoration: underline;
+    }
+
+    .register-link {
+      color: #007bff;
+      /* Blue color for register link */
+      text-decoration: underline;
+    }
+
+    .additional-links {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .black-text {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="login-left d-none d-md-flex">
+      <!-- Content for the left side with background image -->
+      <!-- You can add additional content or adjust styling here -->
+    </div>
+    <div class="login-right">
+      <div class="login-box">
+        <div class="login-header">
+          Welcome to Hospital Management
+        </div>
+        <form>
+          <div class="form-group input-container">
+            <i class="fas fa-user input-icon"></i>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+          </div>
+          <div class="form-group input-container">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="btn btn-custom">Login</button>
+          <a href="#" class="custom-link">Forgot Password?</a>
+          <div class="additional-links">
+            <span class="black-text">Don't have an account?</span> <a href="#"
+              class="custom-link register-link">Register</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
